@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="visualizations/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>WeatherPy Home</title>
   </head>
   <body>
     <header>
       <h1>Latitude vs X</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <nav>
-          <p>Plots</p>
-          <a href="max_temp.html">Max Temperature</a>
-          <a href="humidity.html">Humidity</a>
-          <a href="cloudiness.html">Cloudiness</a>
-          <a href="wind_speed.html">Wind Speed</a>
-        </nav>
-        <a href="comparisons.html">Comparisons</a>
-        <a href="data.html">Data</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="max_temp.html">Max Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+          <li><a href="wind_speed.html">Wind Speed</a></li>
+          <li><a href="comparisons.html">Comparisons</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
       </nav>
     </header>
     <div class="explanation">
       <h1>WeatherPy: A Summary</h1>
-      <img src="" alt="">
+      <img src="Resources/assets/images/Fig1.png" alt="lat vs max temp">
       <p>This project looked at analysing weather patterns in relation to the equator. For this, a python script was created
         to pull 500+ random latitudes and longitudes then find the closest city. Using OpenWeather API, current weather data
         was pulled for each city.</p>
@@ -31,12 +31,12 @@
         cloudiness vs latitude, and wind speed vs latitude based on the data found in these cities. The purpose of this site
         is to present the visualizations and an analysis of this data.</p>
     </div>
-    <div class="viz-links">
+    <div class="viz-links sidebar">
       <h1>Visualizations</h1>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+      <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs max temp"></a>
+      <a href="humidity.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs humidity"></a>
+      <a href="cloudiness.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs cloudiness"></a>
+      <a href="wind_speed.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs wind speed"></a>
     </div>
   </body>
 </html>
