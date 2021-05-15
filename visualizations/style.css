@@ -7,6 +7,10 @@ header {
   justify-content: right;
 }
 
+#dropdownMenuButton1 li{
+  display: inline-flex;
+}
+
 @media .navbar (max-size: 720px) {
 
 }
