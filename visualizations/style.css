@@ -1,10 +1,19 @@
 header {
   background-color: #d690f6;
+  display: inline-flex;
+}
+
+header h1 {
+    justify-content: left;
+}
+
+.navbar {
+  justify-content: right;
+  position: relative;
 }
 
 .navbar ul li {
   display: inline-flex;
-  justify-content: right;
 }
 
 #dropdownMenuButton1 li{
