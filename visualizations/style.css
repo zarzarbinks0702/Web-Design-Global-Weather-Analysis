@@ -1,0 +1,12 @@
+header {
+  background-color: #d690f6;
+}
+
+.navbar ul li {
+  display: inline-flex;
+  justify-content: right;
+}
+
+@media .navbar (max-size: 720px) {
+
+}
