@@ -17,13 +17,16 @@ header h2 {
   text-align: center;
 }
 
-.navbar-nav {
-  margin-left: 100%;
-  align-items: flex-end;
+/*https://www.w3.org/Style/Examples/007/center.en.html but I played around with the properties to make it work*/
+.navbar {
+  margin: 0;
+  position: fixed;
+  right: 0;
+  transform: translate(0, 20%);
 }
 
 .navbar ul li {
-  display: inline-flex;
+  display: inline;
 }
 
 img {
