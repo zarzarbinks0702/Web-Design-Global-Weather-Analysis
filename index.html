@@ -8,30 +8,28 @@
   </head>
   <body>
     <header class="col-sm-12">
-      <h1>Latitude vs X</h1>
+      <h2>Latitude vs X</h2>
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Plots
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a href="max_temp.html">Max Temperature</a></li>
-                <li><a href="humidity.html">Humidity</a></li>
-                <li><a href="cloudiness.html">Cloudiness</a></li>
-                <li><a href="wind_speed.html">Wind Speed</a></li>
-              </ul>
-            </div>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+            </ul>
           </li>
-          <li><a href="comparisons.html">Comparisons</a></li>
-          <li><a href="data.html">Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="comparisons.html">Comparisons</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
         </ul>
       </nav>
     </header>
     <section class="row">
-      <div class="explanation col-md-8">
+      <div class="explanation col-md-8 col-sm-12">
         <h1>WeatherPy: A Summary</h1>
         <img src="Resources/assets/images/Fig1.png" alt="lat vs max temp">
         <p>This project looked at analysing weather patterns in relation to the equator. For this, a python script was created
@@ -41,7 +39,7 @@
           cloudiness vs latitude, and wind speed vs latitude based on the data found in these cities. The purpose of this site
           is to present the visualizations and an analysis of this data.</p>
       </div>
-      <div class="viz-links sidebar col-md-2">
+      <div class="viz-links sidebar col-md-4 col-sm-12">
         <h1>Visualizations</h1>
         <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs max temp"></a>
         <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="lat vs humidity"></a>
