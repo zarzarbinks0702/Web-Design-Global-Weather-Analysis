@@ -18,8 +18,9 @@ header h2 {
   text-align: center;
 }
 
-p {
-  margin: 0.5em;
+p, ol {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   text-align: center;
 }
 

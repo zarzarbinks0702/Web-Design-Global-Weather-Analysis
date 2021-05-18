@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="col-xs-12">
-      <h2>Latitude vs X</h2>
+      <h2>X vs Latitude</h2>
       <nav class="navbar navbar-expand-md" id="#navbarToggleExternalContent">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -60,20 +60,38 @@
     <section class="visualizations">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <h4>Latitude vs Max Temperature</h4>
+          <h4>Max Temperature vs Latitude</h4>
           <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" alt="lat vs max temp"></a>
         </div>
         <div class="col-md-6 col-sm-12">
-          <h4>Latitude vs Humidity</h4>
+          <h4>Humidity vs Latitude</h4>
           <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="lat vs humidity"></a>
         </div>
         <div class="col-md-6 col-sm-12">
-          <h4>Latitude vs Cloudiness</h4>
+          <h4>Cloudiness vs Latitude</h4>
           <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="lat vs cloudiness"></a>
         </div>
         <div class="col-md-6 col-sm-12">
-          <h4>Latitude vs Wind Speed</h4>
+          <h4>Wind Speed vs Latitude</h4>
           <a href="wind_speed.html"><img src="Resources/assets/images/Fig4.png" alt="lat vs wind speed"></a>
+        </div>
+        <div class="col-xs-12">
+          <br><h1 class="title">Overall Observations and Trends</h1>
+          <p>Detailed plots related to these observations can be seen on each trend's individual page.</p><br>
+          <ol>
+            <li>The linear regression for all of the data points shows, even when weakly correlated, opposite correlations
+              (positive vs negative) for the northern and southern hemispheres. This makes sense, since the latitude values
+              for the southern hemisphere (-90 to 0) go towards the equator on the plots while the latitude values for the
+              northern hemisphere (0 to 90) go away from the equator on the plot due to the geometry of the earth (a rough
+              sphere).</li><br>
+            <li>It's interesting that only the max temperature of the cities has a strong correlation to the latitude of
+              the cities, with an R-squared value of 0.77 for the northern hemisphere and 0.48 for the southern hemisphere,
+              especially since wind speed, humidity, and cloudiness depend on environmental factors, and it would make sense
+              for environmental factors to be somewhat consistent based on latitude since temperature plays a small part in the
+              environmental factors of a region. </li><br>
+              <li>The linear regressions were performed by hemisphere since the data was curved and fit better with a quadratic
+                regression. By splitting it up, the data became more linear, giving better correlation values.</li>
+          </ol>
         </div>
       </div>
     </section>
