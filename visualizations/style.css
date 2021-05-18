@@ -20,7 +20,7 @@ header h2 {
 /*https://www.w3.org/Style/Examples/007/center.en.html but I played around with the properties to make it work*/
 .navbar {
   margin: 0;
-  position: fixed;
+  position: absolute;
   right: 0;
   transform: translate(0, 20%);
 }
@@ -30,8 +30,8 @@ header h2 {
 }
 
 img {
-  width: 600px;
-  height: 450px;
+  width: 30em;
+  height: 20em;
   display: block;
   margin: auto;
 }
@@ -47,13 +47,28 @@ img {
   height: 135px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 780px) {
   .navbar-expand-md {width: auto;}
+  .container-fluid {visibility: collapse;}
+  #navbarToggleExternalContent {visibility: collapse;}
 }
 
-.container-fluid {
-  background-color: #d690f6;
-  opacity: 10%;
+@media (max-width: 780px) {
+  .navbar-expand-md {visibility: collapse;}
+  .container-fluid {width: auto;
+    background-color: #d690f6;
+    opacity: 50%;}
+}
+
+#navbarToggleExternalContent {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  transform: translate(-10%, 30%);
+  border-width: thin;
+  border-style: solid;
+  background-color: white;
+  padding: 5px;
 }
 
 .col-xs-12 {
