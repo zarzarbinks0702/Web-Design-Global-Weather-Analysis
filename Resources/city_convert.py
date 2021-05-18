@@ -4,7 +4,7 @@ import csv
 
 #read the csv file
 cities_csv_path = ('cities.csv')
-with open(cities_csv_path) as cities_csv:
+with open(cities_csv_path, encoding="utf8") as cities_csv:
     cities_csvreader = csv.reader(cities_csv, delimiter=',')
     cities_csv_header = next(cities_csvreader)
 

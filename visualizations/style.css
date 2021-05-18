@@ -51,6 +51,11 @@ img {
   .navbar-expand-md {width: auto;}
 }
 
+.container-fluid {
+  background-color: #d690f6;
+  opacity: 10%;
+}
+
 .col-xs-12 {
   width: 100%;
 }
