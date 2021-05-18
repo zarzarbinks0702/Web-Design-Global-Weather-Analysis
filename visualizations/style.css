@@ -8,6 +8,7 @@ header {
 /*https://www.w3.org/Style/Examples/007/center.en.html*/
 header h2 {
     margin: 0;
+    margin-left: 0.5em;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -17,9 +18,15 @@ header h2 {
   text-align: center;
 }
 
+p {
+  margin: 0.5em;
+  text-align: center;
+}
+
 /*https://www.w3.org/Style/Examples/007/center.en.html but I played around with the properties to make it work*/
 .navbar {
   margin: 0;
+  margin-right: 0.5em;
   position: absolute;
   right: 0;
   transform: translate(0, 20%);
@@ -27,6 +34,7 @@ header h2 {
 
 .navbar ul li {
   display: inline;
+  text-decoration: none;
 }
 
 img {
@@ -34,6 +42,17 @@ img {
   height: 20em;
   display: block;
   margin: auto;
+}
+
+.side-by-side {
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.side-by-side img {
+  width: 400px;
+  height: 250px;
 }
 
 .viz-links {
@@ -45,6 +64,14 @@ img {
 .viz-links img{
   width: 180px;
   height: 135px;
+}
+
+.viz-links img:hover {
+  background-color: #EED2FB;
+}
+
+.visualizations img:hover {
+  background-color: #EED2FB;
 }
 
 @media (min-width: 780px) {
