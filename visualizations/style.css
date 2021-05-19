@@ -7,11 +7,9 @@ header {
 
 /*https://www.w3.org/Style/Examples/007/center.en.html*/
 header h2 {
-    margin: 0;
-    margin-left: 0.5em;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+  margin-right: 0.5em;
+  position: absolute;
+  top: 20px; right: 10px;
 }
 
 .title {
@@ -29,8 +27,8 @@ p, ol {
   margin: 0;
   margin-right: 0.5em;
   position: absolute;
-  right: 0;
-  transform: translate(0, 20%);
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .navbar ul li {
@@ -78,11 +76,11 @@ img {
 @media (min-width: 780px) {
   .navbar-expand-md {width: auto;}
   .container-fluid {visibility: collapse;}
-  #navbarToggleExternalContent {visibility: collapse;}
+  #navbarToggleExternalContent {display: none;}
 }
 
 @media (max-width: 780px) {
-  .navbar-expand-md {visibility: collapse;}
+  .navbar-expand-md {display: none;}
   .container-fluid {width: auto;
     background-color: #d690f6;
     opacity: 50%;}
@@ -91,12 +89,13 @@ img {
 #navbarToggleExternalContent {
   margin: 0;
   position: absolute;
-  right: 0;
-  transform: translate(-10%, 30%);
+  left: 0;
+  transform: translate(0, 30%);
   border-width: thin;
   border-style: solid;
   background-color: white;
   padding: 5px;
+  z-index: 10;
 }
 
 .col-xs-12 {
