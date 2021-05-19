@@ -9,7 +9,7 @@ header {
 header h2 {
   margin-right: 0.5em;
   position: absolute;
-  top: 20px; right: 10px;
+  top: 10px; right: 30px;
 }
 
 .title {
@@ -24,11 +24,7 @@ p, ol {
 
 /*https://www.w3.org/Style/Examples/007/center.en.html but I played around with the properties to make it work*/
 .navbar {
-  margin: 0;
-  margin-right: 0.5em;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
+  display: right;
 }
 
 .navbar ul li {

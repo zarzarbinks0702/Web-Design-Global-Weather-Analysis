@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="visualizations/style.css">
-    <title>Max Temperature vs Latitude</title>
-  </head>
-  <body>
-    <header class="col-xs-12">
-      <h2>X vs Latitude</h2>
-      <nav class="navbar navbar-expand-md">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              Plots
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
-              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
-              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
-              <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="comparisons.html">Comparisons</a></li>
-          <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
-        </ul>
-      </nav>
-      <nav class="navbar navbar-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </nav>
-      <div class="collapse" data-toggle="collapse" id="navbarToggleExternalContent">
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              Plots
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
-              <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
-              <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
-              <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="comparisons.html">Comparisons</a></li>
-          <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
-        </ul>
+<head>
+  <meta charset="utf-8">
+  <!--bootstrap style sheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!--external css style sheet-->
+  <link rel="stylesheet" href="visualizations/style.css">
+  <!--font awesome icons style sheet-->
+  <script src="https://kit.fontawesome.com/58cbddb0b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--creating header bar-->
+  <header class="col-xs-12">
+    <!--header bar title-->
+    <h2>X  vs Latitude</h2>
+    <!--create navigation bar-->
+    <nav class="navbar navbar-expand-md">
+      <ul class="nav navbar-nav ml-auto">
+        <!--homepage link in navbar-->
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <!--create the plot dropdown in the navbar-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-chart-line"></i> Plots
+          </a>
+          <!--create items (plot links) for the dropdown list-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="max_temp.html"><i class="fas fa-thermometer-full"></i> Max Temperature</a></li>
+            <li><a class="dropdown-item" href="humidity.html"><i class="fas fa-water"></i> Humidity</a></li>
+            <li><a class="dropdown-item" href="cloudiness.html"><i class="fas fa-cloud"></i> Cloudiness</a></li>
+            <li><a class="dropdown-item" href="wind_speed.html"><i class="fas fa-wind"></i> Wind Speed</a></li>
+          </ul>
+        </li>
+        <!--comparisons page link in the navbar-->
+        <li class="nav-item"><a class="nav-link" href="comparisons.html"><i class="fas fa-not-equal"></i> Comparisons</a></li>
+        <!--data page link in the navbar-->
+        <li class="nav-item"><a class="nav-link" href="data.html"><i class="fas fa-table"></i> Data</a></li>
+      </ul>
+    </nav>
+    <!--creates the menu button for collapsed screens (https://getbootstrap.com/docs/5.0/components/navbar/)-->
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </header>
+    </nav>
+    <!--the collapsed menu to pull up when the menu button is visible and the main navbar is hidden-->
+    <div class="collapse" data-toggle="collapse" id="navbarToggleExternalContent">
+      <ul class="nav navbar-nav ml-auto">
+        <!--homepage link in navbar-->
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-chart-line"></i> Plots
+          </a>
+          <!--create items (plot links) for the dropdown list-->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="max_temp.html"><i class="fas fa-thermometer-full"></i> Max Temperature</a></li>
+            <li><a class="dropdown-item" href="humidity.html"><i class="fas fa-water"></i> Humidity</a></li>
+            <li><a class="dropdown-item" href="cloudiness.html"><i class="fas fa-cloud"></i> Cloudiness</a></li>
+            <li><a class="dropdown-item" href="wind_speed.html"><i class="fas fa-wind"></i> Wind Speed</a></li>
+          </ul>
+        </li>
+        <!--comparisons page link in the navbar-->
+        <li class="nav-item"><a class="nav-link" href="comparisons.html"><i class="fas fa-not-equal"></i> Comparisons</a></li>
+        <!--data page link in the navbar-->
+        <li class="nav-item"><a class="nav-link" href="data.html"><i class="fas fa-table"></i> Data</a></li>
+      </ul>
+    </div>
+  </header>
     <section class="row">
       <div class="explanation col-md-8 col-sm-12">
         <h1 class="title">Max Temperature</h1>
