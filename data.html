@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--external css style sheet-->
   <link rel="stylesheet" href="visualizations/style.css">
-  <!--font awesome icons style sheet-->
+  <!--font awesome icons style sheet  for the navbar glyphicons-->
   <script src="https://kit.fontawesome.com/58cbddb0b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -70,9 +70,12 @@
       </ul>
     </div>
   </header>
+    <!--title of page-->
     <section class="col-xs-12">
       <h1 class="title">The Data</h1>
     </section>
+    <!--responsive table of data used to generate the plots-->
+    <!--taken from Resources/cities.csv, run through a python script(Resources/city_convert.py) to convert to an HTML table-->
     <div class="table-responsive">
       <table border="1" class="table table-bordered">
         <thead>
@@ -6912,6 +6915,7 @@
         </tbody>
       </table>
     </div>
+    <!--script to allow bootstrap components to run-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

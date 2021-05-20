@@ -1,3 +1,5 @@
+/*make the header bar (with site title and navbar) a pinkish/purple color that connects to the
+rest of the page at a height that is proportionate to the screen*/
 header {
   background-color: #d690f6;
   display: inline-flex;
@@ -5,13 +7,15 @@ header {
   position: relative;
 }
 
-/*https://www.w3.org/Style/Examples/007/center.en.html*/
+/*center the header title on the right side of the header section
+(https://www.w3.org/Style/Examples/007/center.en.html)*/
 header h2 {
   margin-right: 0.5em;
   position: absolute;
   top: 10px; right: 30px;
 }
 
+/*center the page titles along their sections on each page*/
 .title {
   text-align: center;
 }
@@ -22,16 +26,13 @@ p, ol {
   text-align: center;
 }
 
-/*https://www.w3.org/Style/Examples/007/center.en.html but I played around with the properties to make it work*/
-.navbar {
-  display: right;
-}
-
+/*make sure the navbar items display next to each other*/
 .navbar ul li {
   display: inline;
   text-decoration: none;
 }
 
+/*set size/position of main images on each page*/
 img {
   width: 30em;
   height: 20em;
@@ -39,42 +40,50 @@ img {
   margin: auto;
 }
 
+/*set formatting for the linear regression images container*/
 .side-by-side {
   display: inline;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/*set size for linear regression images*/
 .side-by-side img {
   width: 475px;
   height: 300px;
 }
 
+/*set formatting for the visualization sidebar container*/
 .viz-links {
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/*set formatting for the visualization sidebar images*/
 .viz-links img{
   width: 180px;
   height: 135px;
 }
 
+/*make the box appear around the visualization sidebar images when hovered over*/
 .viz-links img:hover {
   background-color: #EED2FB;
 }
 
+/*make the box appear around the comparisons page images when hovered over*/
 .visualizations img:hover {
   background-color: #EED2FB;
 }
 
+/*set navbar behavior for screens larger than 780px*/
 @media (min-width: 780px) {
   .navbar-expand-md {width: auto;}
   .container-fluid {visibility: collapse;}
   #navbarToggleExternalContent {display: none;}
 }
 
+/*set navbar behavior for screens smaller than 780px*/
 @media (max-width: 780px) {
   .navbar-expand-md {display: none;}
   .container-fluid {width: auto;
@@ -82,6 +91,7 @@ img {
     opacity: 50%;}
 }
 
+/*set style for the collapsed nav menu (on smaller screens)*/
 #navbarToggleExternalContent {
   margin: 0;
   position: absolute;
@@ -94,6 +104,7 @@ img {
   z-index: 10;
 }
 
+/*make header row span the entire length of the webpage*/
 .col-xs-12 {
   width: 100%;
 }

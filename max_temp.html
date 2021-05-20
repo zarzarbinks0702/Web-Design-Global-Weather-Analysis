@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--external css style sheet-->
   <link rel="stylesheet" href="visualizations/style.css">
-  <!--font awesome icons style sheet-->
+  <!--font awesome icons style sheet  for the navbar glyphicons-->
   <script src="https://kit.fontawesome.com/58cbddb0b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -71,13 +71,16 @@
     </div>
   </header>
     <section class="row">
+      <!--the main part of the page-->
       <div class="explanation col-md-8 col-sm-12">
+        <!--plot of max temp vs latitude and analysis paragraph-->
         <h1 class="title">Max Temperature</h1>
         <img src="Resources/assets/images/Fig1.png" alt="lat vs max temp">
         <p>This plot is showing the distribution of the maximum temperature for a city based on the latitude the
           city lays on. The maximum temperature for the city decreases as the city's latitude gets further away
           from the equator (0 lat), and the peak of the curve (representing the highest temperatures) is closer to
           the equator (0 lat).</p>
+        <!--plot split by northern and southern hemispheres with linear regressions and analysis-->
         <h1 class="title">Linear Regressions</h1>
         <div class="side-by-side col-md-8 col-sm-12">
           <img src="Resources\assets\images\north_max_temp_vs_lat_15April2021.png" alt="northern hem. lat vs max temp">
@@ -87,6 +90,7 @@
           calculated for each. The trendlines for temperature show a moderate correlation between distance from the equator
           and maximum temperature, with both hemispheres showing a decreasing temperature when moving away from latitude = 0.</p>
       </div>
+      <!--visualization sidebar that contains image links to the plot pages-->
       <div class="sidebar col-md-4 col-sm-12">
         <h1 class="title">Visualizations</h1>
         <div class="viz-links">
@@ -97,6 +101,7 @@
         </div>
       </div>
     </section>
+    <!--script to allow bootstrap components to run-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--external css style sheet-->
   <link rel="stylesheet" href="visualizations/style.css">
-  <!--font awesome icons style sheet-->
+  <!--font awesome icons style sheet  for the navbar glyphicons-->
   <script src="https://kit.fontawesome.com/58cbddb0b7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -71,12 +71,15 @@
     </div>
   </header>
     <section class="row">
+      <!--the main part of the page-->
       <div class="explanation col-md-8 col-sm-12">
+        <!--plot of humidity vs latitude and analysis paragraph-->
         <h1 class="title">Humidity</h1>
         <img src="Resources/assets/images/Fig2.png" alt="lat vs humidity">
         <p>This plot is showing the distribution of the humidity percentage for a city based on the latitude the city
           lays on. The humidity percentage doesn't appear to correlate to the latitude of the city for
           this day. The data points are all over the plot.</p>
+        <!--plot split by northern and southern hemispheres with linear regressions and analysis-->
         <h1 class="title">Linear Regressions</h1>
         <div class="side-by-side col-md-8 col-sm-12">
           <img src="Resources\assets\images\north_humidity_vs_lat_15April2021.png" alt="northern hem. lat vs humidity">
@@ -87,6 +90,7 @@
           This can be seen on the plots when there are many values far outside of the trendline, and no clusters of values
           near the trendline.</p>
       </div>
+      <!--visualization sidebar that contains image links to the plot pages-->
       <div class="sidebar col-md-4 col-sm-12">
         <h1 class="title">Visualizations</h1>
         <div class="viz-links">
@@ -97,6 +101,7 @@
         </div>
       </div>
     </section>
+    <!--script to allow bootstrap components to run-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
