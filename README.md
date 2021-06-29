@@ -1,4 +1,4 @@
-# Web-Design-Challenge
+# Web-Design-Global-Weather-Analysis
 Web design project based on a previous class project (https://github.com/zarzarbinks0702/Global-Weather-Analysis). 05/22/2021.
 Uses HTML, CSS, Bootstrap.
 
